@@ -997,8 +997,8 @@ def torchaudio_load(
         frame_offset=frame_offset,
         num_frames=num_frames,
     )
-    return audio.numpy(), int(sampling_rate)
-
+    #return audio.numpy(), int(sampling_rate)
+    return audio, int(sampling_rate)
 
 def torchaudio_2_ffmpeg_load(
     path_or_fd: Union[Pathlike, BytesIO],
